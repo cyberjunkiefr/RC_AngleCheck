@@ -15,6 +15,9 @@ btnB = Button(39)
 
 
 i2c = SoftI2C(scl=Pin(22), sda=Pin(21))
+pmu = axp192.AXP192(i2c, board=axp192.M5StickCPlus)
+#print("Battery Status: {:.2f} V".format(pmu.batt_voltage()))
+
 sensor = MPU6886(i2c,accel_sf=1, gyro_sf=1)
 
 # definition du display
