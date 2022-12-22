@@ -60,7 +60,7 @@ def handle_menu():
     elif menuon and degrees :
         tft.rotation(1)
         tft.fill(colors.BLUE)
-        tft.text(vga1_bold_16x32, "DEGREES:", 0, 0, colors.YELLOW, colors.BLUE)
+        tft.text(vga1_bold_16x32, "DEGREES :", 0, 0, colors.YELLOW, colors.BLUE)
         length = len('+00.00')
         width = tft.width() // 2 - length // 2 * vga1_bold_16x32.WIDTH
         height = (tft.height() // 2) 
