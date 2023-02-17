@@ -13,7 +13,6 @@ class Button:
     self._pin = Pin(pin, mode=Pin.IN, pull=Pin.PULL_UP)
     #self._pin.init(Pin.IN, handler=self.irq_cb, trigger=(Pin.IRQ_FALLING|Pin.IRQ_RISING))
     self._pin.irq(trigger=(Pin.IRQ_FALLING|Pin.IRQ_RISING), handler=self.irq_cb)
-    print('IRQ started...')
     self._wasPressed_cb = None
     self._wasReleased_cb = None
     self._releasedFor_cb = None

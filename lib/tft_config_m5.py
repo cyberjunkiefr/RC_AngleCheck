@@ -14,7 +14,7 @@ def config(rotation=0, buffer_size=0, options=0):
         reset=Pin(18, Pin.OUT),
         cs=Pin(5, Pin.OUT),
         dc=Pin(23, Pin.OUT),
-        backlight=Pin(33, Pin.OUT),
+        #backlight=Pin(33, Pin.OUT),
         rotation=rotation,
         options=options,
         buffer_size=buffer_size)
